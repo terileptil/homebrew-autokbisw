@@ -1,9 +1,9 @@
 class Autokbisw < Formula
   desc "Automatic keyboard/input source switching for OSX"
-  homepage "https://github.com/ratkins/autokbisw"
-  url "https://github.com/ratkins/autokbisw/archive/1.2-alpha1.tar.gz"
-  version "1.2"
-  sha256 "06e5b7e197c6cc3b5e2f8582ac720b76a2bef99041b4c253e17be8124d6ae89b"
+  homepage "https://github.com/jeantil/autokbisw"
+  url "https://github.com/jeantil/autokbisw/archive/1.2.0.tar.gz"
+  version "1.2.0"
+  sha256 "1c3bfad19b9025ad15f01ea0554351f47225807efd85cb4b4f0b6e1785af3f3e"
     
   depends_on :xcode
     
@@ -27,10 +27,20 @@ class Autokbisw < Formula
         <array>
           <string>#{bin}/autokbisw</string>
         </array>
+        <!--
+        <string>--location</string>
+        <string>-v</string>
+        -->   
         <key>RunAtLoad</key>
         <true/>
         <key>KeepAlive</key>
         <true/>
+        <!--
+        <key>StandardOutPath</key>
+        <string>/usr/local/var/log/autokbisw.log</string>
+        <key>StandardErrorPath</key>
+        <string>/usr/local/var/log/autokbisw.log</string>
+        -->
         <key>StandardErrorPath</key>
         <string>/dev/null</string>
         <key>StandardOutPath</key>
