@@ -5,6 +5,13 @@ class Autokbisw < Formula
   version "1.2.0"
   sha256 "1c3bfad19b9025ad15f01ea0554351f47225807efd85cb4b4f0b6e1785af3f3e"
     
+  bottle do
+    root_url 'https://github.com/jeantil/autokbisw/releases/download/1.2.0'
+    sha256 'a1f03198e3b1456b00ce5f0ddd7185ff0a03e8a4c3d3a4745f80306fc2074f6a' => :mavericks
+    sha256 'xxx' => :high_sierra
+    sha256 'yyy' => :sierra
+  end
+
   depends_on :xcode
     
   def install
