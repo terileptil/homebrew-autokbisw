@@ -8,8 +8,6 @@ class Autokbisw < Formula
   bottle do
     root_url 'https://github.com/jeantil/autokbisw/releases/download/1.2.0'
     sha256 'a1f03198e3b1456b00ce5f0ddd7185ff0a03e8a4c3d3a4745f80306fc2074f6a' => :mavericks
-    sha256 'xxx' => :high_sierra
-    sha256 'yyy' => :sierra
   end
 
   depends_on :xcode
