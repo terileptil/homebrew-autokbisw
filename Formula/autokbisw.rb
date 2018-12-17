@@ -6,10 +6,11 @@ class Autokbisw < Formula
   sha256 "1c3bfad19b9025ad15f01ea0554351f47225807efd85cb4b4f0b6e1785af3f3e"
     
   bottle do
-    root_url 'https://github.com/jeantil/autokbisw/releases/download/1.2.0'
-    sha256 'acb0e2d34472c86bdce9bbe8c04b0a22af60901288ae21e087fc677a297fc17f' => :mavericks
+    root_url "https://github.com/jeantil/autokbisw/releases/download/1.2.0"
+    cellar :any_skip_relocation
+    sha256 "f46d97f6ddd99ad406ce1d990d89023bc7ab1f0a8246089e3d5cf7af1dbd8647" => :high_sierra
   end
-
+  
   depends_on :xcode
     
   def install
