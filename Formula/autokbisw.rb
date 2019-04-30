@@ -43,9 +43,9 @@ class Autokbisw < Formula
         <true/>
         <!--
         <key>StandardOutPath</key>
-        <string>/usr/local/var/log/autokbisw.log</string>
+        <string>${var}/log/autokbisw.log</string>
         <key>StandardErrorPath</key>
-        <string>/usr/local/var/log/autokbisw.log</string>
+        <string>${var}/log/autokbisw.log</string>
         -->
         <key>StandardErrorPath</key>
         <string>/dev/null</string>
